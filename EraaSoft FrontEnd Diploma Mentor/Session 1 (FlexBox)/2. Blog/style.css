@@ -1,0 +1,34 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item1 {
+  width: 100%;
+  height: 120px;
+  background-color: rgba(128, 128, 128, 0.647);
+}
+
+.secondRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item2 {
+  background-color: rgba(128, 128, 128, 0.647);
+  width: 81%;
+  height: 1000px;
+}
+
+.item3 {
+  background-color: rgba(128, 128, 128, 0.647);
+  width: 18%;
+  height: 1000px;
+}
+
+.item4 {
+  background-color: rgba(128, 128, 128, 0.647);
+  width: 100%;
+  height: 15vh;
+}

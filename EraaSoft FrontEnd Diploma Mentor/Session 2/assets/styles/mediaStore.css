@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  border: 0;
+  outline: 0;
+}
+
+.container1 {
+  width: 100vw;
+  background-color: #eeede7;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.logo {
+  color: #503217;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.logo > h5 {
+  font-size: 34px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.container1 > nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.container1 > nav > ul a {
+  color: #503217;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Sans-Serif", sans-serif;
+  text-decoration: none;
+}
+
+.container1 > nav > ul > li > a > select {
+  background-color: #eeede7;
+  color: #503217;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.actions img:nth-child(3) {
+  position: absolute;
+  right: -6px;
+  top: -4px;
+}
+
+.hero {
+  width: 100vw;
+  background-color: #e8e6de;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.container2 > .block1 {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding-inline-end: 58px;
+}
+
+.container2 > .block1 > h1 {
+  color: #503217;
+  font-size: 80px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+.container2 > .block1 > p {
+  color: #8f7d6a;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Sans-Serif", sans-serif;
+  margin-bottom: 60px;
+}
+
+.shopNow {
+  width: fit-content;
+  color: #f2f2f2;
+  background-color: #503217;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  padding-top: 12px;
+  padding-inline: 20px;
+  padding-bottom: 12px;
+  cursor: pointer;
+}
+
+.category {
+  background-color: #eeede7;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.container3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container3 > h4 {
+  color: #503217;
+  font-size: 45px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 60px;
+}
+
+.icons {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 112px;
+}
+
+.icons div {
+  width: calc((100% - 150px) / 6);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #8f7d6a1a;
+  border-radius: 10px;
+  padding: 24px 38px;
+}
+
+.icons div img {
+  background-color: #e2dfcf;
+  border: 2px dotted #503217;
+  border-radius: 112px;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.icons h6 {
+  color: #503217;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 3px;
+  align-self: center;
+}
+
+.icons p {
+  color: #8f7d6a;
+  font-size: 11px;
+  font-weight: 400;
+  font-family: "Sans-Serif", sans-serif;
+
+  align-self: center;
+}
+
+.product1 {
+  display: flex;
+  gap: 30px;
+}
+
+.handSanitizer,
+.facewash,
+.faceMask {
+  background-color: #f2f2f2;
+  width: calc((100% - 60px) / 3);
+  display: flex;
+  gap: 5px;
+  border-radius: 10px;
+  padding: 20px 0 20px 0;
+  margin-bottom: 94px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.content span {
+  width: fit-content;
+  color: #eeede7;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Sans-Serif", sans-serif;
+  background-color: #d3744a;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+.content h5 {
+  color: #503217;
+  font-size: 19px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 15px;
+}
+
+.handSanitizer-action,
+.facewash-action,
+.facemask-action {
+  width: fit-content;
+  color: #8f7d6a;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  border-bottom: 2px solid #8f7d6a;
+  cursor: pointer;
+}
+
+.product2 > h4 {
+  color: #503217;
+  font-size: 45px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 60px;
+}
