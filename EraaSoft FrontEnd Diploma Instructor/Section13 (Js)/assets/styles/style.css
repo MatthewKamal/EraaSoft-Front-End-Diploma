@@ -1,0 +1,87 @@
+:root {
+  --screenbackground: #f6f3ef;
+  --whiteBackground: #fffffc;
+  --headerColor: #1576d6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  border: 0;
+  outline: 0;
+}
+
+html,
+body {
+  background-color: var(--screenbackground);
+  font-family: "Barlow", sans-serif;
+}
+
+.MainContainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ParentContainer {
+  max-width: 465px;
+  aspect-ratio: 465/395;
+  background-color: var(--whiteBackground);
+  display: flex;
+  flex-direction: column;
+  padding: 35px 25px;
+  align-items: center;
+  border: 1px solid #bbd0ff;
+  border-radius: 25px;
+}
+
+.ParentContainer > h2 {
+  text-align: center;
+  color: var(--headerColor);
+  font-size: 32px;
+  font-weight: 600;
+
+  margin-bottom: 25px;
+}
+
+.ChildContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ChildContainer input {
+  width: 100%;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.inches {
+  border: 1px solid #6c757d80;
+}
+
+.ChildContainer button {
+  width: 100%;
+  background-color: #25292c;
+  color: var(--whiteBackground);
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 12px;
+}
+
+.meter {
+  border: 1px solid #f4c123;
+}
+
+.meter::placeholder {
+  text-align: center;
+  color: #25292c;
+  font-size: 16px;
+  font-weight: 600;
+}
