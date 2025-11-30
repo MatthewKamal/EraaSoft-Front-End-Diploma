@@ -16,7 +16,7 @@
 .container2 {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px; /* horizontal & vertical spacing */
+  gap: 12px;
 }
 
 .header-Title {
@@ -36,7 +36,7 @@
   transition: transform 0.3s, box-shadow 0.3s;
   padding: 12px;
   border-radius: 6px;
-  flex: 0 0 calc(25% - 12px); /* 4 cards per row minus the gap */
+  flex: 0 0 calc(25% - 12px);
 }
 
 .cards:hover {
