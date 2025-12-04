@@ -1,0 +1,74 @@
+:root {
+  --heading: #1a1a1a;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4d9fff, #6f52ff, #ff6ec7, #ffc96f);
+  background-size: 300% 300%;
+  animation: bgAnimation 12s ease infinite;
+}
+
+@keyframes bgAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.parentContainer {
+  width: fit-content;
+  padding: 22px;
+  border-radius: 18px;
+
+  background: linear-gradient(135deg, #e6e6e6aa, #ffffff33, #bdbdbdaa);
+  backdrop-filter: blur(10px);
+
+  box-shadow: inset 2px 2px 8px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 8px rgba(0, 0, 0, 0.2), 0 10px 25px rgba(0, 0, 0, 0.25);
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.waiting {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+h1 {
+  color: var(--heading);
+}
+
+.action {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.action input {
+  flex-grow: 1;
+}
+
+.inProgress {
+  width: 100%;
+}
+
+.action-progress {
+  width: 100%;
+}

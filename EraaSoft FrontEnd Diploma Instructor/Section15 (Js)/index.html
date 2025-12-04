@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ticket Queue</title>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="parentContainer">
+        <h1>Ticket Queue</h1>
+        <div class="action">
+          <input
+            class="rounded px-1 customerData"
+            type="text"
+            placeholder="Enter Customer Name"
+          />
+          <button class="btn btn-primary add">Add</button>
+        </div>
+        <div
+          class="bg-success bg-opacity-50 bg-gradient rounded px-1 inProgress"
+        ></div>
+        <button class="btn btn-primary action-progress">
+          Serve Next Customer
+        </button>
+        <div class="waiting"></div>
+      </section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
