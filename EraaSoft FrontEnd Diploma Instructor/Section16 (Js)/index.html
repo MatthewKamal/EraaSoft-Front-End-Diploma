@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Task3</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link href="./assets/styles/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container-lg">
+      <section class="products d-flex flex-column align-items-start">
+        <!-- Title -->
+        <div class="container1 mb-4">
+          <h1 class="header-Title">
+            <span class="header-Title-Span">Our</span> Products
+          </h1>
+        </div>
+        <!-- Search + Filter Zone -->
+        <div class="row mb-4">
+          <div class="col-md-4 mb-2">
+            <input
+              id="searchInput"
+              type="text"
+              class="form-control"
+              placeholder="Search by name..."
+            />
+          </div>
+
+          <div class="col-md-3 mb-2">
+            <input
+              id="minInput"
+              type="number"
+              class="form-control"
+              placeholder="Min Price"
+            />
+          </div>
+
+          <div class="col-md-3 mb-2">
+            <input
+              id="maxInput"
+              type="number"
+              class="form-control"
+              placeholder="Max Price"
+            />
+          </div>
+
+          <div class="col-md-2">
+            <button id="searchBtn" class="btn btn-primary w-100">Search</button>
+          </div>
+        </div>
+
+        <!-- Products Container -->
+        <div class="container2 row gy-3" id="productsContainer"></div>
+      </section>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Products JS -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
