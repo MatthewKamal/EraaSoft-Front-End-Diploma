@@ -1,0 +1,83 @@
+:root {
+  --background1: #fbfbfb;
+  --background2: #0093e9;
+  --background3: #80d0c7;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(
+    var(--background2),
+    var(--background3)
+  ) !important;
+}
+
+.mainContainer {
+  background-color: var(--background1);
+}
+
+.addingTask {
+  width: max-content;
+  background-color: var(--background2);
+  color: var(--background1);
+  font-size: 16px;
+  font-family: "Gemunu Libre", "Cairo", sans-serif !important;
+  padding: 8px 16px;
+}
+
+.writingTask::placeholder {
+  font-size: 16px;
+  font-family: "Gemunu Libre", "Cairo", sans-serif !important;
+}
+
+.childContainer_2 button {
+  background-color: var(--background1);
+}
+
+.All,
+.todo,
+.completedTask {
+  text-align: center;
+  width: 25%;
+}
+
+.task {
+  background-color: #fff;
+  box-shadow: 0px 0px 2px 2px #32323212 !important;
+  padding: 4px;
+}
+
+.task1 {
+  font-family: "Gemunu Libre", "Cairo", sans-serif !important;
+}
+
+.task > h4,
+.task > p {
+  font-family: "Gemunu Libre", "Cairo", sans-serif !important;
+}
+
+.task.completed {
+  background-color: #e6ffe6;
+  border-left: 5px solid green;
+}
+
+.task.in-progress {
+  background-color: #ffe6e6;
+  border-left: 5px solid red;
+}
+
+.active-filter {
+  border-bottom: 3px solid #0093e9 !important;
+  color: #0093e9;
+}
+
+.allButton,
+.toDoButton,
+.completedTaskButton {
+  transition: all 0.2s ease;
+}

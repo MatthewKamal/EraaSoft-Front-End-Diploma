@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Task3</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!--Custom Css-->
+    <link href="./assests/styles/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main class="d-flex justify-content-center align-items-center p-3">
+      <section
+        class="mainContainer w-50 d-flex flex-column justify-content-center align-items-center gap-2 p-3"
+      >
+        <div class="childContainer_1 d-flex w-100">
+          <input
+            type="text"
+            class="writingTask form-control rounded-0 me-2"
+            placeholder="Enter your New Task"
+          />
+          <button class="addingTask border-0">Create</button>
+        </div>
+        <div class="childContainer_2 d-flex justify-content-between w-100">
+          <div class="All">
+            <button class="allButton border-0">ALL</button>
+          </div>
+          <div class="todo">
+            <button class="toDoButton border-0">toDo</button>
+          </div>
+          <div class="completedTask">
+            <button class="completedTaskButton border-0">Completed</button>
+          </div>
+        </div>
+        <div class="childContainer_3 d-flex flex-column gap-2 w-100"></div>
+      </section>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Products JS -->
+    <script src="./assests/js/script.js"></script>
+  </body>
+</html>
