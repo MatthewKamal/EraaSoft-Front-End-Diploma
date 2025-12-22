@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Timer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="./assets/styles/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-lg mt-4">
+      <section class="products">
+        <div class="d-flex align-items-center gap-4 mb-4">
+          <h1 class="mb-0">
+            <span class="header-Title-Span">Our</span> Products
+          </h1>
+
+          <div class="position-relative fs-4">
+            🛒
+            <span
+              id="cartCount"
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+              >0</span
+            >
+          </div>
+
+          <div class="position-relative fs-4">
+            ❤️
+            <span
+              id="wishlistCount"
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark"
+              >0</span
+            >
+          </div>
+        </div>
+        <div class="offer-wrapper w-100 my-4">
+          <div class="offer-header text-center text-white">
+            Limited Time Offer! Sale Ends In:
+          </div>
+
+          <div class="offer-timer d-flex justify-content-center gap-4">
+            <div class="time-box">
+              <div class="time-number hours"></div>
+              <div class="time-label">HOURS</div>
+            </div>
+
+            <div class="time-box">
+              <div class="time-number minutes"></div>
+              <div class="time-label">MINUTES</div>
+            </div>
+
+            <div class="time-box">
+              <div class="time-number seconds"></div>
+              <div class="time-label">SECONDS</div>
+            </div>
+          </div>
+
+          <div class="offer-footer text-center text-white">Don’t Miss Out!</div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-md-4 mb-2">
+            <input
+              id="searchInput"
+              type="text"
+              class="form-control"
+              placeholder="Search by name..."
+            />
+          </div>
+          <div class="col-md-3 mb-2">
+            <input
+              id="minInput"
+              type="number"
+              class="form-control"
+              placeholder="Min Price"
+            />
+          </div>
+          <div class="col-md-3 mb-2">
+            <input
+              id="maxInput"
+              type="number"
+              class="form-control"
+              placeholder="Max Price"
+            />
+          </div>
+          <div class="col-md-2">
+            <button id="searchBtn" class="btn btn-primary w-100">Search</button>
+          </div>
+        </div>
+        <!-- PRODUCTS -->
+        <div class="row gy-3" id="productsContainer"></div>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

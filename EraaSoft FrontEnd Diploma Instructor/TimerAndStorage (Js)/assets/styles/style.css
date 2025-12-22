@@ -1,0 +1,139 @@
+:root {
+  --Border_Color: #007bff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container1 {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.header-Title {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.header-Title-Span {
+  border-bottom: 4px solid var(--Border_Color);
+  border-radius: 3px;
+}
+
+.cards {
+  padding: 12px;
+  border-radius: 6px;
+  background-color: #f8f9fa;
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 12px;
+  border-radius: 6px;
+  flex: 0 0 calc(25% - 12px);
+}
+
+.cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cards img {
+  width: 100%;
+  aspect-ratio: 276/184;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.products h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.cards p {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.cards > h4 {
+  color: #28a745;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cards > h4 > span {
+  color: #dc3545;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: line-through;
+  padding-left: 8px;
+}
+
+.offer-wrapper {
+  background: linear-gradient(to right, #b51f22, #cb2a2f, #b51f22);
+  border-radius: 12px;
+
+  overflow: hidden;
+}
+
+.offer-header {
+  background-color: #d12b2b;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 14px 0;
+}
+
+.offer-timer {
+  padding: 20px 0;
+}
+
+.time-box {
+  width: 120px;
+  background-color: #b31e20;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: inset 0 -4px rgba(0, 0, 0, 0.25);
+}
+
+.time-number {
+  background-color: #d12b2b;
+  color: #fff;
+  font-size: 72px;
+  font-weight: 700;
+  padding: 10px 0;
+  border-radius: 8px 8px 0 0;
+}
+
+.time-label {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 8px 0;
+}
+
+.offer-footer {
+  background-color: #b31e20;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 0;
+}
+
+@media (max-width: 991px) {
+  .cards {
+    flex: 0 0 calc(50% - 16px);
+  }
+}
+
+@media (max-width: 575px) {
+  .cards {
+    flex: 0 0 100%;
+  }
+}
