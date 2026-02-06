@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
@@ -14,15 +15,35 @@ const Navbar = () => {
 
         <ul className={styles.navLinks}>
           <li>
-            <a href="#" className={styles.active}>
+            <NavLink
+              to="/"
+              end
+              className={({ isActive }) =>
+                isActive ? styles.active : undefined
+              }
+            >
               Home
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#">Books</a>
+            <NavLink
+              to="/books"
+              className={({ isActive }) =>
+                isActive ? styles.active : undefined
+              }
+            >
+              Books
+            </NavLink>
           </li>
           <li>
-            <a href="#">About us</a>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? styles.active : undefined
+              }
+            >
+              About us
+            </NavLink>
           </li>
         </ul>
       </div>
@@ -38,9 +59,25 @@ const Navbar = () => {
 
       {menuOpen && (
         <div className={styles.mobileMenu}>
-          <a href="#">Home</a>
-          <a href="#">Books</a>
-          <a href="#">About us</a>
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) => (isActive ? styles.active : undefined)}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/books"
+            className={({ isActive }) => (isActive ? styles.active : undefined)}
+          >
+            Books
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? styles.active : undefined)}
+          >
+            About us
+          </NavLink>
           <button className={`${styles.btn} ${styles.login}`}>Log in</button>
           <button className={`${styles.btn} ${styles.signup}`}>Sign Up</button>
         </div>

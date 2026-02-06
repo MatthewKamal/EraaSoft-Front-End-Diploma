@@ -1,0 +1,269 @@
+/* ===== Our Mission ===== */
+.missionSection {
+  padding: 80px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  color: #222;
+}
+
+.contactSection {
+  position: relative;
+  padding: 100px 0;
+  color: #fff;
+  background: url("../../public/Background.png") center / cover no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(46, 42, 59, 0.95);
+}
+
+.contactContainer {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  display: flex;
+
+  gap: 60px;
+  z-index: 2;
+}
+
+.left {
+  flex: 1;
+}
+
+.left h2 {
+  font-size: 22px;
+  opacity: 0.9;
+}
+
+.left h3 {
+  font-size: 32px;
+  margin: 10px 0 20px;
+}
+
+.left p {
+  margin-bottom: 30px;
+  color: #cfcfcf;
+  max-width: 500px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 15px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+}
+
+.inputGroup span {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.inputGroup textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.form button {
+  width: fit-content;
+  padding: 12px 35px;
+  background-color: #ff2f6e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.form button:hover {
+  opacity: 0.9;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+}
+
+.infoCard {
+  background-color: #ffffff;
+  color: #333;
+  padding: 18px 25px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.infoCard span {
+  width: 40px;
+  height: 40px;
+  background-color: #ff2f6e;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+  .contactContainer {
+    width: 90%;
+    gap: 40px;
+  }
+
+  .left h3 {
+    font-size: 28px;
+  }
+
+  .missionSection {
+    padding: 60px 20px;
+  }
+
+  .sectionTitle {
+    font-size: 24px;
+  }
+}
+
+/* Tablet Portrait & Small Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .contactSection {
+    padding: 60px 0;
+  }
+
+  .contactContainer {
+    width: 90%;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .left h2 {
+    font-size: 20px;
+  }
+
+  .left h3 {
+    font-size: 26px;
+  }
+
+  .left p {
+    max-width: 100%;
+  }
+
+  .right {
+    gap: 20px;
+  }
+
+  .missionSection {
+    padding: 50px 20px;
+  }
+
+  .sectionTitle {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .missionSection {
+    padding: 40px 15px;
+  }
+
+  .sectionTitle {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  .contactSection {
+    padding: 40px 0;
+  }
+
+  .contactContainer {
+    width: 90%;
+    gap: 30px;
+  }
+
+  .left h2 {
+    font-size: 18px;
+  }
+
+  .left h3 {
+    font-size: 22px;
+    margin: 8px 0 15px;
+  }
+
+  .left p {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .form {
+    gap: 15px;
+  }
+
+  .inputGroup {
+    padding: 10px 12px;
+  }
+
+  .inputGroup input,
+  .inputGroup textarea {
+    font-size: 13px;
+  }
+
+  .inputGroup textarea {
+    min-height: 100px;
+  }
+
+  .form button {
+    padding: 10px 28px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .infoCard {
+    padding: 15px 20px;
+    gap: 12px;
+  }
+
+  .infoCard span {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .infoCard p {
+    font-size: 14px;
+  }
+}

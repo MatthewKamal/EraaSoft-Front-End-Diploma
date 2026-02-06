@@ -1,17 +1,21 @@
-import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import Navbar from "./components/navbar/navbar.jsx";
-import Hero from "./components/heroSection/hero.jsx";
-import Features from "./components/ourFeatures/features.jsx";
-import Products from "./components/recommendedProducts/products.jsx";
-import Footer from "./components/footer/footer.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import MainLayout from "./layout/MainLayout";
+import Home from "./pages/Home";
+import About from "./pages/About";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <MainLayout />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: "about", element: <About /> },
+    ],
+  },
+]);
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <Navbar />
-    <Hero />
-    <Features />
-    <Products />
-    <Footer />
-  </StrictMode>,
+  <RouterProvider router={router} />,
 );
