@@ -1,12 +1,14 @@
 import React, { useState } from "react";
+import { usePhotos } from "../context/PhotoContext";
 
-const SearchForm = ({ onSearch }) => {
+const SearchForm = () => {
   const [searchQuery, setSearchQuery] = useState("");
+  const { handleSearch } = usePhotos();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (searchQuery.trim()) {
-      onSearch(searchQuery.trim());
+      handleSearch(searchQuery.trim());
     }
   };
 

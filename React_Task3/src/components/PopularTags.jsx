@@ -1,6 +1,9 @@
 import React from "react";
+import { usePhotos } from "../context/PhotoContext";
 
-const PopularTags = ({ onTagClick }) => {
+const PopularTags = () => {
+  const { handleSearch } = usePhotos();
+
   const popularTags = [
     "Nature",
     "Ocean",
@@ -20,7 +23,7 @@ const PopularTags = ({ onTagClick }) => {
           <button
             key={tag}
             className="tag"
-            onClick={() => onTagClick(tag.toLowerCase())}
+            onClick={() => handleSearch(tag.toLowerCase())}
           >
             {tag}
           </button>
