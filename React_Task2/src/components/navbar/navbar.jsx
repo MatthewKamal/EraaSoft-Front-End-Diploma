@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
@@ -49,8 +49,12 @@ const Navbar = () => {
       </div>
 
       <div className={styles.right}>
-        <button className={`${styles.btn} ${styles.login}`}>Log in</button>
-        <button className={`${styles.btn} ${styles.signup}`}>Sign Up</button>
+        <Link to="/login">
+          <button className={`${styles.btn} ${styles.login}`}>Log in</button>
+        </Link>
+        <Link to="/register">
+          <button className={`${styles.btn} ${styles.signup}`}>Sign Up</button>
+        </Link>
       </div>
 
       <div className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)}>
@@ -78,8 +82,14 @@ const Navbar = () => {
           >
             About us
           </NavLink>
-          <button className={`${styles.btn} ${styles.login}`}>Log in</button>
-          <button className={`${styles.btn} ${styles.signup}`}>Sign Up</button>
+          <Link to="/login">
+            <button className={`${styles.btn} ${styles.login}`}>Log in</button>
+          </Link>
+          <Link to="/register">
+            <button className={`${styles.btn} ${styles.signup}`}>
+              Sign Up
+            </button>
+          </Link>
         </div>
       )}
     </nav>

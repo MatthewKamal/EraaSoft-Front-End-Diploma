@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background: #f0f0f0;
+  min-height: 100vh;
+}
+
+/* ── Page Wrapper ── */
+.signupWrapper {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fce4ec 0%, #f3f3f3 60%, #fce4ec 100%);
+  padding: 20px;
+}
+
+/* ── Card ── */
+.signupCard {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 44px 40px 36px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow:
+    0 8px 40px rgba(220, 30, 110, 0.1),
+    0 2px 8px rgba(0, 0, 0, 0.06);
+  animation: cardIn 0.45s cubic-bezier(0.22, 0.68, 0, 1.2) both;
+}
+
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(28px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ── Title ── */
+.signupTitle {
+  text-align: center;
+  color: #e01f78;
+  font-size: 1.55rem;
+  font-weight: 800;
+  margin-bottom: 28px;
+  letter-spacing: 0.01em;
+}
+
+/* ── Form ── */
+.signupForm {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Form Group ── */
+.formGroup {
+  margin-bottom: 18px;
+}
+
+/* ── Labels ── */
+.formLabel {
+  display: block;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 7px;
+}
+
+/* ── Input Wrapper ── */
+.inputWrapper {
+  position: relative;
+}
+
+/* ── Inputs ── */
+.formInput {
+  width: 100%;
+  padding: 13px 16px;
+  border: 1.5px solid #e8e8e8;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-family: "Nunito", sans-serif;
+  color: #1a1a2e;
+  background: #fafafa;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s,
+    background 0.2s;
+  outline: none;
+}
+
+.formInput::placeholder {
+  color: #bbb;
+  font-weight: 500;
+}
+
+.formInput:focus {
+  border-color: #e01f78;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(224, 31, 120, 0.1);
+}
+
+.formInput.errorInput {
+  border-color: #ff4d6d;
+  background: #fff5f7;
+}
+
+.passwordInput {
+  padding-right: 44px;
+}
+
+/* ── Error Text ── */
+.errorText {
+  color: #ff4d6d;
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  animation: errorIn 0.2s ease both;
+}
+
+@keyframes errorIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Options Row (Remember me + Forgot password) ── */
+.optionsRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 2px;
+}
+
+.rememberLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  cursor: pointer;
+}
+
+.rememberCheckbox {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #e01f78;
+}
+
+.forgotLink {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #e01f78;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.forgotLink:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+}
+
+/* ── Submit Button ── */
+.submitBtn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #e01f78 0%, #ff5fa0 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  font-weight: 800;
+  font-family: "Nunito", sans-serif;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  transition:
+    opacity 0.2s,
+    transform 0.15s,
+    box-shadow 0.2s;
+  box-shadow: 0 4px 18px rgba(224, 31, 120, 0.28);
+  margin-top: 8px;
+  margin-bottom: 18px;
+}
+
+.submitBtn:hover {
+  opacity: 0.93;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 24px rgba(224, 31, 120, 0.35);
+}
+
+.submitBtn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 12px rgba(224, 31, 120, 0.22);
+}
+
+/* ── Don't have an account ── */
+.signupLinkText {
+  text-align: center;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.signupLinkAnchor {
+  color: #e01f78;
+  font-weight: 800;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.signupLinkAnchor:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+}
+
+/* ── OR Divider ── */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.dividerLine {
+  flex: 1;
+  height: 1.5px;
+  background: #e8e8e8;
+  border-radius: 2px;
+}
+
+.dividerText {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #aaa;
+}
+
+/* ── Social Buttons ── */
+.socialBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 13px 16px;
+  background: #fff;
+  border: 1.5px solid #e8e8e8;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  color: #1a1a2e;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s,
+    background 0.2s;
+}
+
+.socialBtn:hover {
+  border-color: #e01f78;
+  box-shadow: 0 2px 12px rgba(224, 31, 120, 0.1);
+  background: #fff8fb;
+}
+
+.socialBtn:last-child {
+  margin-bottom: 0;
+}
+
+.socialIcon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
